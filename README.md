@@ -1,6 +1,12 @@
 # Joomla Check List
 Coses a tenir en compte en un Joomla per entregar al client final
 
+## Preparació hosting
+* Programar backups FTP
+
+## Integració Google
+* Obtenir claus per a Google Maps, Google Analytics i reCaptcha
+
 ## Configuració
 En l'apartat de configuració és important tenir en compte el següent:
 
@@ -17,3 +23,4 @@ Algunes extensions necessaries en qualsevol instal·lació:
 * Email as username (properament inclós en el JPFramework)
 * Secure Login
 * Mòdul administració Afi Notify per mostrar publicitat
+* Watchful
