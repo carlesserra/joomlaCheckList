@@ -28,3 +28,5 @@ RewriteCond %{HTTPS} !=on
 RewriteCond %{QUERY_STRING} !(^|&)view=callback(&|$)
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ~~~
+
+## Favicon
