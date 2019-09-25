@@ -10,6 +10,8 @@ En l'apartat de configuració és important tenir en compte el següent:
 * Error reporting "None"
 * Activar la compressió de pàgines amb Gzip
 * Gestió de sessions amb PHP en comptes de la base de dades
+* Creació Captcha de Google v2 o v3
+* Instal·lació client Watchful.li
 
 ## Extensions
 Algunes extensions necessaries en qualsevol instal·lació:
@@ -18,7 +20,7 @@ Algunes extensions necessaries en qualsevol instal·lació:
 * Secure Login
 * Mòdul administració Afi Notify per mostrar publicitat
 
-## Comproprovar resolucions
+## Comprovar resolucions
 * http://whatismyscreenresolution.net/multi-screen-test
 * Acordar llista de resolucions standard
 
