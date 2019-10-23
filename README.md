@@ -19,6 +19,7 @@ Algunes extensions necessaries en qualsevol instal·lació:
 * Mòdul administració Afi Notify per mostrar publicitat
 * Client Watchful
 * Akeeba Backup Pro
+* Google Recaptcha (de moment v2?)
 
 ## Comproprovar resolucions
 * http://whatismyscreenresolution.net/multi-screen-test
