@@ -24,3 +24,26 @@ Algunes extensions necessaries en qualsevol instal·lació:
 * Secure Login
 * Mòdul administració Afi Notify per mostrar publicitat
 * Watchful
+=======
+
+## Comproprovar resolucions
+* http://whatismyscreenresolution.net/multi-screen-test
+* Acordar llista de resolucions standard
+
+## SSL
+Si tenim el com_botiga i fem servir redsys a la configuració global ha de desactivar-se el ssl i al htaccess afegir aquestes linies al final:
+
+~~~
+##configuració especifica per redsys sota ssl
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{QUERY_STRING} !(^|&)view=callback(&|$)
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#La url del reset password falla en aquestes condicions la modifiquem
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+#RewriteCond %{QUERY_STRING} !(^|&)layout=confirm&token=(.+?)$
+#RewriteRule ^ https://%{HTTP_HOST}%password-reset{REQUEST_URI}  [L,R=301]
+~~~
+
