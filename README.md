@@ -10,6 +10,8 @@ En l'apartat de configuració és important tenir en compte el següent:
 * Error reporting "None"
 * Activar la compressió de pàgines amb Gzip
 * Gestió de sessions amb PHP en comptes de la base de dades
+* A 'Sistema' > 'Configuración Global' > 'Sistema', en el paràmetre 'Caché del sistema', habilitar l'opció 'ON - almacenamiento en la caché conservador'.
+* A 'Sistema' > 'Configuración Global' > 'Servidor', habilitar la compressió GZip de les pàgines
 
 ## Extensions
 Algunes extensions necessaries en qualsevol instal·lació:
@@ -23,7 +25,9 @@ Algunes extensions necessaries en qualsevol instal·lació:
 * Acordar llista de resolucions standard
 
 ## SSL
-Si tenim el com_botiga i fem servir redsys a la configuració global ha de desactivar-se el ssl i al htaccess afegir aquestes linies al final:
+* Instal·lar certificats en totes les pàgines, encara que sigui Let's Encrypt.
+* A 'Sistema' > 'Configuración Global' > 'Servidor', activar el paràmetre 'Forzar HTTPS' a 'Todo el sitio'
+* Si tenim el com_botiga i fem servir redsys a la configuració global ha de desactivar-se el ssl i al htaccess afegir aquestes linies al final:
 
 ~~~
 ##configuració especifica per redsys sota ssl
